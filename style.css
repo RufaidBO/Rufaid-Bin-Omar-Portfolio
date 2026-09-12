@@ -41,7 +41,7 @@ button,a{font:inherit}button{color:inherit}a{color:var(--accent)}
   .reveal-block{min-height:58vh;padding:5vh 6vw}
   .block-heading{min-height:20vh;gap:10px}
   .reveal-block.is-open .block-content{margin-top:16px}
-  .reveal-block#certifications .block-heading h2{font-size:clamp(48px,14vw,92px);white-space:normal}
+  .reveal-block#certifications .block-heading h2{font-size:clamp(38px,11vw,72px);white-space:normal}
   .reveal-block#certifications .block-heading{width:100%;overflow:hidden}
   .reveal-block#certifications .block-heading h2{max-width:100%;overflow-wrap:anywhere;word-break:normal;letter-spacing:-.04em}
   .certs{padding-left:18px;line-height:1.65}
@@ -60,3 +60,35 @@ button,a{font:inherit}button{color:inherit}a{color:var(--accent)}
 }
 
 @keyframes hand-tap{0%,100%{transform:translateY(0) rotate(0)}45%{transform:translateY(4px) rotate(-8deg)}65%{transform:translateY(0) rotate(0)}}
+
+/* Sky palette override */
+:root{
+  --bg:#7EC8E3;
+  --forest:#4A90C2;
+  --surface:rgba(255,255,255,.28);
+  --surface-bright:rgba(255,255,255,.46);
+  --text:#152238;
+  --soft:#2E4157;
+  --muted:rgba(46,65,87,.72);
+  --accent:#152238;
+  --accent-soft:rgba(21,34,56,.14)
+}
+body{background:linear-gradient(125deg,var(--bg),#69add1 48%,var(--forest));color:var(--text)}
+body::before{opacity:.2;background-image:linear-gradient(rgba(11,110,79,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(11,110,79,.12) 1px,transparent 1px)}
+.block-content,.block-content p,.block-content li,.block-content h3,.block-content strong,.block-content .proj-title,.block-content .summary,.block-content .details p,.block-content .other-skills,.block-content .contact-item{color:var(--text);text-shadow:0 0 10px rgba(255,255,255,.28)}
+.block-content .contact-item .copy,.block-content .contact-item a{color:var(--text);text-shadow:0 0 10px rgba(255,255,255,.32)}
+.btn-cta{color:var(--text);background:#fff}
+.btn-cta:hover{color:var(--text);background:#E4E8EC}
+.detection-frame{border-color:rgba(21,34,56,.35)}
+.reveal-block:hover::after,.reveal-block.is-open::after{border-color:rgba(21,34,56,.38);box-shadow:0 0 80px rgba(21,34,56,.12) inset}
+.tag,.skill{border-color:rgba(21,34,56,.42)}
+.contact-item{border-color:rgba(21,34,56,.3);background:rgba(21,34,56,.08)}
+.contact-item:hover{border-color:var(--accent);background:var(--accent-soft)}
+.mobile-menu{border-color:rgba(21,34,56,.35)}
+.portrait{border-color:rgba(21,34,56,.35)}
+.reveal-block{border-top-color:rgba(21,34,56,.18)}
+.site-footer{border-top-color:rgba(21,34,56,.18);color:var(--muted)}
+.lightbox{background:rgba(21,34,56,.9)}
+.lightbox-close{color:var(--text)}
+
+.tag:hover,.tag:active,.tag:focus-visible,.skill:hover,.skill:active,.skill:focus-visible{background:#fff;color:#152238;border-color:#fff}

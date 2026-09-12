@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
         nav.style.top = '70px';
         nav.style.padding = '14px';
         nav.style.background = 'var(--surface)';
-        nav.style.border = '1px solid rgba(46,217,168,.35)';
+        nav.style.border = '1px solid rgba(21,34,56,.45)';
       });
     }
 
@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function showToast(message) {
       const toast = document.createElement('div');
       toast.textContent = message;
-      toast.style.cssText = 'position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:var(--accent);color:#062019;padding:10px 14px;font:600 12px var(--mono);z-index:3000';
+      toast.style.cssText = 'position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:#fff;color:#152238;padding:10px 14px;font:600 12px var(--mono);z-index:3000';
       document.body.appendChild(toast);
       setTimeout(() => { toast.style.opacity = '0'; toast.style.transition = 'opacity 220ms'; setTimeout(() => toast.remove(), 240); }, 1200);
     }
