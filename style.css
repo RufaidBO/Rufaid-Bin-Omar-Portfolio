@@ -31,3 +31,32 @@ button,a{font:inherit}button{color:inherit}a{color:var(--accent)}
 .block-content .summary,.block-content .details p,.block-content .other-skills{color:#fff}
 .block-content .contact-item{color:#fff;text-shadow:0 0 12px rgba(255,255,255,.32)}
 .block-content .contact-item .copy,.block-content .contact-item a{color:#fff;text-shadow:0 0 12px rgba(255,255,255,.4)}
+
+@media (max-width:800px){
+  .hero{gap:18px;padding-top:4vh}
+  .hero-right{width:100%;align-self:center;justify-content:center}
+  .portrait-frame{width:min(58vw,220px);aspect-ratio:220 / 390;padding:0}
+  .portrait{width:100%;height:100%;object-fit:cover}
+  .detection-frame{inset:0}
+  .reveal-block{min-height:58vh;padding:5vh 6vw}
+  .block-heading{min-height:20vh;gap:10px}
+  .reveal-block.is-open .block-content{margin-top:16px}
+  .reveal-block#certifications .block-heading h2{font-size:clamp(48px,14vw,92px);white-space:normal}
+  .reveal-block#certifications .block-heading{width:100%;overflow:hidden}
+  .reveal-block#certifications .block-heading h2{max-width:100%;overflow-wrap:anywhere;word-break:normal;letter-spacing:-.04em}
+  .certs{padding-left:18px;line-height:1.65}
+  .project{padding:14px}
+  .project p{margin:8px 0}
+  .project .tech-tags{margin-top:8px}
+  .details p{margin:6px 0}
+  .edu p{margin:6px 0}
+  .block-content>p{margin:8px 0}
+  .contact-list{gap:8px}
+  .contact-item{gap:10px;padding:8px 12px}
+  .contact-label{min-width:62px}
+  .contact-item .copy,.contact-item a{font-size:13px;line-height:1.25}
+  .reveal-block#contact .block-content>p:last-child{margin-top:12px}
+  .reveal-hint b{font-size:16px;animation:hand-tap 1.2s ease-in-out infinite}
+}
+
+@keyframes hand-tap{0%,100%{transform:translateY(0) rotate(0)}45%{transform:translateY(4px) rotate(-8deg)}65%{transform:translateY(0) rotate(0)}}

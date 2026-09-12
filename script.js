@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    const isTouch = window.matchMedia('(hover: none)').matches;
+    const isTouch = window.matchMedia('(hover: none)').matches || window.matchMedia('(max-width: 800px)').matches;
     document.querySelectorAll('.reveal-block').forEach(block => {
       const toggle = block.querySelector('.block-toggle');
       const heading = block.querySelector('.block-heading');
@@ -11,12 +11,17 @@ document.addEventListener('DOMContentLoaded', () => {
       const hintLabel = hint.firstChild;
       const closedHint = hintLabel.textContent;
 
+      if (isTouch) {
+        hintLabel.textContent = 'tap to reveal ';
+        hint.querySelector('b').textContent = '☝';
+      }
+
       const setOpen = (open) => {
         block.classList.toggle('is-open', open);
         toggle.setAttribute('aria-expanded', String(open));
         toggle.textContent = open ? 'Close section' : `Open ${block.querySelector('h2').textContent}`;
-        hintLabel.textContent = open ? 'tap to close ' : closedHint;
-        hint.querySelector('b').textContent = open ? '×' : '+';
+        hintLabel.textContent = open ? 'tap to close ' : (isTouch ? 'tap to reveal ' : closedHint);
+        hint.querySelector('b').textContent = open ? '×' : (isTouch ? '☝' : '+');
       };
 
       if (!isTouch) {
