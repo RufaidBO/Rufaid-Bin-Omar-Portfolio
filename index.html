@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rufaid Bin Omar — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@300;400;600&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-inner">
+      <div class="brand" aria-hidden="true"></div>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="btn btn-cta" id="contactTop">Contact</button>
+        <button class="mobile-menu" id="mobileMenu" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="hero" id="home">
+      <div class="hero-left">
+        <div class="labels">
+          <span>SOFTWARE ENGINEER</span>
+          <span>AI &amp; ML</span>
+          <span>DUBAI, UAE</span>
+        </div>
+        <h1 class="name">Rufaid Bin Omar<span class="name-cursor" aria-hidden="true">_</span></h1>
+        <p class="intro">Software Design student building AI-driven tools — from computer vision to LLM automation.</p>
+        <div class="contact-line">
+          <button class="copy" data-copy="+(971) 55 497 1015">+(971) 55 497 1015</button>
+          <span class="sep">|</span>
+          <button class="copy" data-copy="rufaidbinomar@gmail.com">rufaidbinomar@gmail.com</button>
+          <span class="sep">|</span>
+          <a class="link" href="https://linkedin.com/in/rufaidbinomar" target="_blank" rel="noopener">linkedin.com/in/rufaidbinomar</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="portrait-frame">
+          <img src="P1.jpeg" alt="Portrait of Rufaid Bin Omar" class="portrait">
+          <div class="detection-frame" aria-hidden="true">
+            <span class="corner corner-tl"></span>
+            <span class="corner corner-tr"></span>
+            <span class="corner corner-bl"></span>
+            <span class="corner corner-br"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="blocks">
+    <section id="projects" class="reveal-block reveal-projects">
+      <div class="block-heading">
+        <span class="block-index">01 / BUILD</span>
+        <h2>Projects</h2>
+        <span class="reveal-hint">click to explore <b>+</b></span>
+        <button class="block-toggle" aria-expanded="false" aria-controls="projects-content">Open Projects</button>
+      </div>
+      <div class="block-content" id="projects-content">
+        <div class="projects-grid">
+        <article class="project card" data-project="p1" id="p1">
+          <div class="project-head">
+            <div class="proj-title">AI-Powered Campus Object Detection System</div>
+            <div class="proj-meta">GROUP PROJECT // APRIL 2026</div>
+          </div>
+          <p class="summary">Developed an AI-driven infrastructure detection system to identify projectors, whiteboards, fire extinguishers, and door signs on campus.</p>
+          <div class="tech-tags">
+            <button class="tag" data-skill="YOLOv11">YOLOv11</button>
+            <button class="tag" data-skill="PyTorch">PyTorch</button>
+            <button class="tag" data-skill="Python">Python</button>
+            <button class="tag" data-skill="Jetson">Jetson Orin</button>
+          </div>
+          <div class="details">
+            <p>Built a custom training dataset with 800 campus-specific images, improving model recall by 14–24%. Deployed edge inference on Jetson Orin for real-time on-device detection with privacy safeguards — no server uploads required.</p>
+          </div>
+        </article>
+
+        <article class="project card" data-project="p2" id="p2">
+          <div class="project-head">
+            <div class="proj-title">AI-Powered Course Extraction Tool</div>
+            <div class="proj-meta">GROUP PROJECT // APRIL 2025</div>
+          </div>
+          <p class="summary">Built an AI-driven app to automate extraction of course data from the university student portal using LLMs.</p>
+          <div class="tech-tags">
+            <button class="tag" data-skill="Streamlit">Streamlit</button>
+            <button class="tag" data-skill="LangChain">LangChain</button>
+            <button class="tag" data-skill="Gemini">Gemini</button>
+            <button class="tag" data-skill="Python">Python</button>
+          </div>
+          <div class="details">
+            <p>Streamlit front end with a Python backend; outputs course details as CSV. Implements user login, semester selection, and LLM-powered data scraping and querying.</p>
+          </div>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="reveal-block">
+      <div class="block-heading">
+        <span class="block-index">02 / STUDY</span>
+        <h2>Education</h2>
+        <span class="reveal-hint">hover to reveal <b>+</b></span>
+        <button class="block-toggle" aria-expanded="false" aria-controls="education-content">Open Education</button>
+      </div>
+      <div class="block-content" id="education-content">
+        <div class="edu">
+          <h3>Canadian University Dubai — Dubai, UAE</h3>
+          <p><strong>Bachelor of Science in Software Design</strong> (4-year Engineering degree)</p>
+          <p>Expected Graduation: May 2027</p>
+          <p>Concentration: Software Engineering, Data Analytics, AI &amp; Robotics, Data Structures &amp; Algorithms, Machine Learning, Artificial Intelligence, Object-Oriented Programming</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="reveal-block">
+      <div class="block-heading">
+        <span class="block-index">03 / TOOLKIT</span>
+        <h2>Technical Skills</h2>
+        <span class="reveal-hint">click to inspect <b>+</b></span>
+        <button class="block-toggle" aria-expanded="false" aria-controls="skills-content">Open Skills</button>
+      </div>
+      <div class="block-content" id="skills-content">
+        <div class="skills-grid">
+        <div class="skill-col">
+          <h3>Languages &amp; Programming</h3>
+          <div class="skill-list">
+            <button class="skill" data-projects="p1 p2">Python</button>
+            <button class="skill" data-projects="p2">Java</button>
+            <button class="skill" data-projects="">SQL</button>
+            <button class="skill" data-projects="p1">C</button>
+          </div>
+        </div>
+        <div class="skill-col">
+          <h3>Frameworks &amp; Tools</h3>
+          <div class="skill-list">
+            <button class="skill" data-projects="p2">Streamlit</button>
+            <button class="skill" data-projects="p2">LangChain</button>
+            <button class="skill" data-projects="p1">YOLOv11</button>
+            <button class="skill" data-projects="p1">PyTorch</button>
+            <button class="skill" data-projects="p1 p2">GitHub</button>
+            <button class="skill" data-projects="">VS Code</button>
+          </div>
+        </div>
+        <div class="skill-col">
+          <h3>Libraries &amp; Technologies</h3>
+          <div class="skill-list">
+            <button class="skill" data-projects="p1 p2">NumPy</button>
+            <button class="skill" data-projects="p2">pandas</button>
+            <button class="skill" data-projects="p2">Gemini</button>
+            <button class="skill" data-projects="p2">Ollama</button>
+            <button class="skill" data-projects="">OpenAI API</button>
+          </div>
+        </div>
+        </div>
+        <p class="other-skills">Other Skills: MS Office, MS Excel, Generative AI Tools, Teamwork, Verbal Communication<br>Languages spoken: English, Hindi, Urdu</p>
+      </div>
+    </section>
+
+    <section id="certifications" class="reveal-block">
+      <div class="block-heading">
+        <span class="block-index">04 / CREDENTIALS</span>
+        <h2>Certifications</h2>
+        <span class="reveal-hint">click to inspect <b>+</b></span>
+        <button class="block-toggle" aria-expanded="false" aria-controls="certifications-content">Open Certifications</button>
+      </div>
+      <div class="block-content" id="certifications-content">
+        <ul class="certs">
+          <li>Introduction to Modern AI — Cisco Networking Academy (April 2026)</li>
+          <li>C Essentials 1 — Cisco Networking Academy (April 2026)</li>
+          <li>Core Java — GIST Educational Academy (April 2023)</li>
+          <li>Advance Python Course — WhiteHat Jr (Aug 2020)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="reveal-block">
+      <div class="block-heading">
+        <span class="block-index">06 / CONNECT</span>
+        <h2>Contact</h2>
+        <span class="reveal-hint">start a conversation <b>+</b></span>
+        <button class="block-toggle" aria-expanded="false" aria-controls="contact-content">Open Contact</button>
+      </div>
+      <div class="block-content" id="contact-content">
+        <div class="contact-list">
+          <p class="contact-item"><span class="contact-label">Email</span><button class="copy" data-copy="rufaidbinomar@gmail.com">rufaidbinomar@gmail.com</button></p>
+          <p class="contact-item"><span class="contact-label">Phone</span><button class="copy" data-copy="+(971) 55 497 1015">+(971) 55 497 1015</button></p>
+          <p class="contact-item"><span class="contact-label">LinkedIn</span><a href="https://linkedin.com/in/rufaidbinomar" target="_blank" rel="noopener">linkedin.com/in/rufaidbinomar</a></p>
+        </div>
+        <p><button class="btn btn-cta" id="contactCTA">Send a message</button></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>© <span id="year"></span> Rufaid Bin Omar — <a href="mailto:rufaidbinomar@gmail.com">rufaidbinomar@gmail.com</a> — <a href="https://linkedin.com/in/rufaidbinomar" target="_blank" rel="noopener">LinkedIn</a></div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+    <img src="" alt="" id="lightboxImg">
+  </div>
+
+  <script src="script.js?v=20260906-2" defer></script>
+</body>
+</html>
